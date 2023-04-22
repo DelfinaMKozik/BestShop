@@ -206,3 +206,96 @@ body {
     background-color: var(--color-green);
 }
 
+.benefits {
+    background-color: var(--color-light-grey);
+    height: 1395px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.benefits .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.benefit-layout {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--color-white);
+    margin: 37px;
+    width: 1124px;
+    height: 370px;
+
+
+}
+
+.benefit1-macbook-img {
+    width: 386px;
+    height: 219px;
+    transform: rotate(315deg);
+}
+
+.benefit1-shape {
+    background-color: var(--color-redish);
+    height: 254px;
+    width: 254px;
+    border-radius: 41px;
+    transform: rotate(45deg);
+}
+
+.benefit2-phone-img {
+    width: 426px;
+    height: 328px;
+}
+
+.benefit2-shape {
+    background-color: var(--color-primary) ;
+    border-radius: 50%;
+    width: 320px;
+}
+
+.benefit3-trumpet-img {
+    width: 295px;
+    height: 208px;
+}
+
+.benefits-title {
+    color: var(--color-black);
+    font-size:36px;
+    font-family: var(--font-raleway);
+    font-weight: 400;
+    margin-bottom: 30px;
+
+}
+
+.benefits-text {
+    color: var(--color-black);
+    font-size: 16px;
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    width: 416px;
+    height: 66px;
+}
+
+.benefits-text::after {
+    content: "";
+    width: 332px;
+    height: 4px;
+    background-color: var(--color-redish);
+    display: block;
+    margin-top: 50px;
+
+}
+
+.benefits-text2::after {
+    background-color: var(--color-primary);
+}
+
+.benefits-text3::after {
+    background-color: var(--color-green);
+}
