@@ -248,21 +248,34 @@ header {
 .benefit1-macbook-img {
     width: 386px;
     height: 219px;
-    transform: rotate(315deg);
-    left: 6px;
+    position: relative;
+    z-index: 1;
+    margin-right: 118px;
+    margin-top: 100px;
+    margin-bottom: 38px;
 }
 
 .benefit1-shape {
+    position: relative;
+}
+
+.benefit1-shape::before {
+    content: "";
     background-color: var(--color-redish);
-    height: 254px;
-    width: 254px;
+    height: 180px;
+    width: 180px;
     border-radius: 41px;
     transform: rotate(45deg);
-    margin-right: 70px ;
+    margin-right: 80px ;
+    position: absolute;
+    z-index: 0;
+    right: -1px;
+    margin-top: 50px;
+
 }
 
 .benefit2-phone-img {
-    width: 426px;
+    width: 429px;
     height: 328px;
 }
 
@@ -375,9 +388,9 @@ header {
     height: 616px;
     width: 1266px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-direction: row;
+    justify-content:space-between;
+    position: relative;
 }
 
 .pricing-boxes {
@@ -386,7 +399,6 @@ header {
     border-radius: 18px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-direction: column;
     padding: 10px;
 
@@ -456,6 +468,9 @@ header {
 
 .pricing-items {
     /*margin: 25px;*/
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 .pricing-item {
@@ -463,6 +478,12 @@ header {
     font-size: 14px;
     font-family: var(--font-open-sans);
     color: var(--color-black);
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+
+
 }
 
 .pricing-item::before {
@@ -471,10 +492,27 @@ header {
     height: 11px;
     display: inline-block;
     margin-right: 10px;
-    background-image: url("images/Checkmark-1.svg");
+    background-image: url("../images/Ckechmark-1.svg");
+    position: absolute;
+    background-size: cover;
+    z-index: 0;
+    left: -17px;
+
 }
 
-.btn {
+.pricing-item--not::before {
+    background-image: url("../images/Close.svg");
+}
+
+.pricing-boxes--basic .pricing-items {
+    margin-top: 40px;
+}
+
+.pricing-boxes--professional .pricing-items {
+    margin-top: 20px;
+}
+
+.btn-pricing {
     text-decoration: none;
     width: 165px;
     height: 50px;
@@ -485,8 +523,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
+    position: absolute;
+    margin-top: 425px;
 
 }
 
@@ -496,7 +534,7 @@ header {
 
 .btn--professional {
     background-color: var(--color-primary);
-
+    margin-top: 465px;
 }
 
 .btn--premium {
@@ -653,6 +691,9 @@ header {
     border:none;
     margin-top: 70px;
     align-self: flex-end;
+    width: 226px;
+    height: 57px;
+
 
 
 }
